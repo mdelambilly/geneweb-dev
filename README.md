@@ -14,3 +14,5 @@ All the geneweb develpment files will be in the host directory you provided. You
 To compile just start the container and compile:
 * docker start -i geneweb-dev
 * make clean distrib
+
+** this image won't work for a SYNOLOGY NAS, use geneweb-syno-dev repository **
