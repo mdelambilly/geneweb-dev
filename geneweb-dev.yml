@@ -1,14 +1,8 @@
 FROM ocaml/opam:debian-11-ocaml-4.14 AS builder 
-ARG uid                 # id of the user which own the syno volume directory
 ENV OPAMYES=yes
 
 # Install required packages for build
 USER root
-
-# Strangely SYNOLOGY impose its UID within container for volumes
-# So we change the opam UID to sync with the user which own the synology volume directory
-RUN echo uid=$uid
-RUN usermod -u $uid opam
 
 # Ignore the apt warning here as apt-get does not allow wildcarding versions
 # hadolint ignore=DL3027
