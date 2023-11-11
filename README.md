@@ -1,6 +1,6 @@
 # geneweb-dev
  
-A docker image to develop on [geneweb](https://github.com/geneweb/geneweb)
+A docker image to develop on [geneweb](https://github.com/geneweb/geneweb) created from the code found [here](https://github.com/geneweb/geneweb/pull/1395) 
 
 To use it :
 1. Copy the two files in a directory on your docker host
